@@ -1,0 +1,2251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dev.io</title>
+        <link rel="stylesheet" href="index.css" />
+        <script src="index.js"></script>
+    </head>
+    <body class="body">
+        <nav>
+            <div class="first-nav">
+                <div class="input">
+                    <svg
+                        onclick="callevent.click()"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi-list"
+                        viewBox="0 0 16 16"
+                        id="btn"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                        />
+                    </svg>
+                    <a href="#" class="def">DEV</a>
+                    <div class="input-field">
+                        <input type="text" placeholder="Search.." />
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="20"
+                            fill="currentColor"
+                            class="bi-search"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                            />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="second-nav">
+                <a class="login" href="#">Log in</a>
+                <a class="create" href="#">Create account</a>
+            </div>
+        </nav>
+
+        <!-- ================content======================== -->
+
+        <div class="content">
+<!-- side bar -->
+
+            <div class="sidebar" id="side-bar">
+                <div class="dev">
+                    <h2 id="close" style="margin:8px;" onclick="callevent.close()">x</h2>
+                    <h2>
+                        DEV Community is a community of 1,074,013 amazing
+                        developers
+                    </h2>
+                    <p>
+                        We're a place where coders share, stay up-to-date and
+                        grow their careers.
+                    </p>
+                    <a class="create" href="#">Create account</a>
+                    <a class="login" href="#">Login</a>
+                </div>
+                <div class="link">
+                    <a href="#" class="">🏠 HOME</a>
+                    <a href="#">📜 Listings</a>
+                    <a href="#">🎙 Podcast</a>
+                    <a href="#">📽 Videos</a>
+                    <a href="#">🏷 Tags</a>
+                    <a href="#">💡 FAQ</a>
+                    <a href="#">Forem Shop</a>
+                    <a href="#">🧡 Sponsors</a>
+                    <a href="#">About</a>
+                    <a href="#">📯 Contact</a>
+                    <a href="#">📖 Guides</a>
+                    <a href="#">🤔 Software Comparisons</a>
+
+                    <!-- ------------other-------------= -->
+                    <div>
+                        <h4>other</h4>
+                        <a href="#">👍 Code of Conduct</a>
+                        <a href="#">🤓 Privacy</a>
+                        <a href="#">👀 Terms of Use</a>
+                        <img src="" alt="" />
+                    </div>
+                </div>
+
+                            <!-- ------------ end of other-------------= -->
+
+
+                <div class="link-icon" style="display: flex; justify-content: space-around;"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+</svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+</svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+</svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+</svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitch" viewBox="0 0 16 16">
+  <path d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z"/>
+  <path d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z"/>
+</svg>      
+
+                <br>
+                </div>
+
+                <div class="link" id="link" style="height:50vh; overflow: hidden; overflow-y: scroll;">
+                    <h4>Popular Tags</h4>
+                    <a href="#">#javascript</a>
+                    <a href="#">#beginners</a>
+                    <a href="#">#programming</a>
+                    <a href="#">#tutorial</a>
+                    <a href="#">#react</a>
+                    <a href="#">#python</a>
+                    <a href="#">#discuss</a>
+                    <a href="#">#opensource</a>
+                    <a href="#">#aws</a>
+                    <a href="#">#career</a>
+                    <a href="#">#css</a>
+                    <a href="#">#typescript</a>
+                    <a href="#">#codenewbie</a>
+                    <a href="#">#api</a>
+                    <a href="#">#testing</a>
+                    <a href="#">#cloud</a>
+                    <a href="#">#android</a>
+                    <a href="#">#github</a>
+                    <a href="#">#html</a>
+                    <a href="#">#news</a>
+                    <a href="#">#database</a>
+                    <a href="#">#security</a>
+                    <a href="#">#java</a>
+                    <a href="#">#ai</a>
+                    <a href="#">#php</a>
+                    <a href="#">#docker</a>
+                </div>
+                <br>
+
+                <div  class="legend" style="background: white;  height: 18rem; border-radius:5px ;margin:7px; padding: 9px;  " class="side-bar-ccontent">
+                    <div style="display:flex;justify-content: space-between;">
+                        <p>Dev community</p>
+                        <p><img src="three-dots.svg" alt=""></p>
+                    </div>
+                    <br>
+                    <div>
+                        <h1 style="color:rgb(63, 62, 62)">The legend of the 
+                            lonely 
+                            coder...
+                        </h1>
+                        <p><a style="color: blue; font-size: small;" href="">join over 1 million Developers on 
+                            Dev
+                        </a></p>
+                    </div>
+                    
+                </div>
+                <div class="legend" style="background: white;  height: 18rem; border-radius:5px ;margin:7px; padding: 9px;  " class="side-bar-ccontent">
+                    <div style="display:flex;justify-content: space-between;">
+                        <p>Dev community</p>
+                        <p><img src="three-dots.svg" alt=""></p>
+                    </div>
+                    <br>
+                    <div>
+                        <p><img style="width: 100%; height: 200px; border-radius: 8px;"  src="imgg.png" alt="Join the Community!"></p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- end of side bar -->
+
+            <div id="info" class="info" onclick="callevent.close()">
+                <div class="btn">
+                    <a class="relevant" href="#">Relevant</a>
+                    <a href="#" class="relevant1">Latest</a>
+                    <a href="#" class="relevant1">Top</a>
+                </div>
+                <div class="section1">
+                    <div class="firstchild">
+                        <h2>CODE NEWBIE</h2>
+                        <p>PODCAST</p>
+                    </div>
+                    <h2>From Occupational Therapy to Code</h2>
+                    <p>Season 24: Episode 4</p>
+                </div>
+                <div class="section-1">
+                    <img src="image1.webp" alt="image" />
+
+                    <!-- ------------------------------------------firstsection------------------------- -->
+
+                    <div class="acc-details">
+                        <div class="profile">
+                            <img src="git.webp" alt="profile-pics" />
+                            <div>
+                                <h6><b>Thomson Hasen</b></h6>
+                                <span>Jun 2</span>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h1>
+                                <a class="title" href="#"
+                                    >Indempotency and Immutable Objects</a
+                                >
+                            </h1>
+                            <div class="icons">
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >beginners</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >programming</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >arcitecture</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >beginnerstutorial</a
+                                >
+                            </div>
+                            <div class="comments">
+                                <div class="reactions">
+                                    <div class="emoji">
+                                        <p><img src="sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" alt=""></p>
+                                        <p><img src="fire.svg" alt=""></p>
+                                        <p><img src="raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg" alt=""></p>
+                                    </div>
+                                    <span class="reaction">5 reactions</span>
+                                </div>
+                                <div class="chat">
+                                    <img src="chat.svg" alt="" />
+                                    <p>Add comment</p>
+                                </div>
+                                <div class="read">
+                                    <p>8 min read</p>
+                                    <b>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-bookmark"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                                            />
+                                        </svg>
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="startnow">
+                        <div style="display: flex; justify-content: space-between;"  >
+                            <p>Dev community</p>
+                            <p><img src="three-dots.svg" alt=""></p>
+                        </div>
+                        <img style="overflow: hidden; width: 100%; border-radius: 4px;cursor:zoom-in;" src="last pics.png" alt="">
+                        <h2>
+                            Need to stay up-to-date with the most relevant trends in software, such as generate AI, cloud computing, and all things frontend?
+                        </h2>
+                        <p>Look no further</p>
+                        <p>You can do so much more once you <b>create your account.</b> Follow the devs and topics you care about, and keep up-to-date.</p>
+                        <h1><a href="#">Start now</a></h1>
+                        <p>Happy coding ❤️</p>
+                    </div>
+
+
+                    
+
+                        <!---------- ---------------secon section------------------------ -->
+
+
+
+
+                    <div class="acc-details">
+                        <div class="profile">
+                            <img src="img9.png" alt="profile-pics" />
+                            <div>
+                                <h6><b>Mateusz ZdrzLWK for Emphie</b></h6>
+                                <span>May 13</span>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h1>
+                                <a class="title" href="#"
+                                    >Programmers, beware! designers attack!</a
+                                >
+                            </h1>
+                            <div class="icons">
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >webdev</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >design</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >frontend</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >proramming</a
+                                >
+                            </div>
+                            <div class="comments">
+                                <div class="reactions">
+                                    <div class="emoji">
+                                        <p><img src="sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" alt=""></p>
+                                        <p><img src="fire.svg" alt=""></p>
+                                        <p><img src="raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg" alt=""></p>
+                                        <p><img src="multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg" alt=""></p>
+                                    </div>
+                                    <span class="reaction">13 reactions</span>
+                                </div>
+                                <div class="chat">
+                                    <img src="chat.svg" alt="" />
+                                    <p>Add comment</p>
+                                </div>
+                                <div class="read">
+                                    <p>5 min read</p>
+                                    <b>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-bookmark"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                                            />
+                                        </svg>
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="acc-details">
+                        <div class="profile">
+                            <img src="img10.webp" alt="profile-pics" />
+                            <div>
+                                <h6><b>Sloan the DEV Moderator for the DEV Team</b></h6>
+                                <span>May 31</span>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h1>
+                                <a class="title" href="#"
+                                    >Welcome Thread - v227</a
+                                >
+                            </h1>
+                            <div class="icons">
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >Welcome</a
+                                >
+                            </div>
+                            <div class="comments">
+                                <div class="reactions">
+                                    <div class="emoji">
+                                        <p><img src="sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" alt=""></p>
+                                        <p><img src="fire.svg" alt=""></p>
+                                        <p><img src="raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg" alt=""></p>
+                                        <p><img src="multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg" alt=""></p>
+                                    </div>
+                                    <span class="reaction">17 reactions</span>
+                                </div>
+                                <div class="chat">
+                                    <img src="chat.svg" alt="" />
+                                    <p>Add comment</p>
+                                </div>
+                                <div class="read">
+                                    <p>1 min read</p>
+                                    <b>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-bookmark"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                                            />
+                                        </svg>
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    <div class="acc-details">
+                        <div class="profile">
+                            <img src="img1.jpg" alt="profile-pics" />
+                            <div>
+                                <h6><b>
+                                    sebastin Wessel
+                                </b></h6>
+                                <span>May 31</span>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h1>
+                                <a class="title" href="#"
+                                    >Stop using express.js</a
+                                >
+                            </h1>
+                            <div class="icons">
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >typescript</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >javascript</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >javascriptlibraries</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >beginners</a
+                                >
+                            </div>
+                            <div class="comments">
+                                <div class="reactions">
+                                    <div class="emoji">
+                                        <p><img src="sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" alt=""></p>
+                                        <p><img src="raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg" alt=""></p>
+                                        <p><img src="fire.svg" alt=""></p>
+                                    </div>
+                                    <span class="reaction">4 reactions</span>
+                                </div>
+                                <div class="chat">
+                                    <img src="chat.svg" alt="" />
+                                    <p>Add comment</p>
+                                </div>
+                                <div class="read">
+                                    <p>2 min read</p>
+                                    <b>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-bookmark"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                                            />
+                                        </svg>
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                    <div class="acc-details">
+                        <div class="profile">
+                            <img src="img3.webp" alt="profile-pics" />
+                            <div>
+                                <h6><b>Andre N. Darcie</b></h6>
+                                <span>May 30</span>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h1>
+                                <a class="title" href="#"
+                                    >Como ter um console de jogos trabalhando home-office mudou minha vida [PT-BR]</a
+                                >
+                            </h1>
+                            <div class="icons">
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >discuss</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >gamedev</a
+                                >
+                            </div>
+                            <div class="comments">
+                                <div class="reactions">
+                                    <div class="emoji">
+                                        <p><img src="sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" alt=""></p>
+                                        <p><img src="fire.svg" alt=""></p>
+                                        <p><img src="raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg" alt=""></p>
+                                    </div>
+                                    <span class="reaction">20 reactions</span>
+                                </div>
+                                <div class="chat">
+                                    <img src="chat.svg" alt="" />
+                                    <p>Add comment</p>
+                                </div>
+                                <div class="read">
+                                    <p>3 min read</p>
+                                    <b>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-bookmark"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                                            />
+                                        </svg>
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+                    <div class="acc-details">
+                        <div class="profile">
+                            <img src="img4.webp" alt="profile-pics" />
+                            <div>
+                                <h6><b>Brandon Damue</b></h6>
+                                <span>Jun 2</span>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h1>
+                                <a class="title" href="#"
+                                    >Route 53 Unveiled: A Comprehensive Guide to Amazon's service.</a
+                                >
+                            </h1>
+                            <div class="icons">
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >dns</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >route53</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >cloudcomputing</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >cloudskills</a
+                                >
+                            </div>
+                            <div class="comments">
+                                <div class="reactions">
+                                    <div class="emoji">
+                                        <p><img src="sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" alt=""></p>
+                                        <p><img src="fire.svg" alt=""></p>
+                                        <p><img src="raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg" alt=""></p>
+                                    </div>
+                                    <span class="reaction">6 reactions</span>
+                                </div>
+                                <div class="chat">
+                                    <img src="chat.svg" alt="" />
+                                    <p>Add comment</p>
+                                </div>
+                                <div class="read">
+                                    <p>15 min read</p>
+                                    <b>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-bookmark"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                                            />
+                                        </svg>
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="acc-details">
+                        <div class="profile">
+                            <img src="img5.jpg" alt="profile-pics" />
+                            <div>
+                                <h6><b>Bap for Quine</b></h6>
+                                <span>Jun 2</span>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h1>
+                                <a class="title" href="#"
+                                    >NVIDIA's $200B Overnight Gain: Trending CUDA Repos Revealed!</a
+                                >
+                            </h1>
+                            <div class="icons">
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >beginners</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >programming</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >arcitecture</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >beginnerstutorial</a
+                                >
+                            </div>
+                            <div class="comments">
+                                <div class="reactions">
+                                    <div class="emoji">
+                                        <p><img src="sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" alt=""></p>
+                                        <p><img src="fire.svg" alt=""></p>
+                                        <p><img src="raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg" alt=""></p>
+                                    </div>
+                                    <span class="reaction">5 reactions</span>
+                                </div>
+                                <div class="chat">
+                                    <img src="chat.svg" alt="" />
+                                    <p>Add comment</p>
+                                </div>
+                                <div class="read">
+                                    <p>8 min read</p>
+                                    <b>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-bookmark"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                                            />
+                                        </svg>
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="acc-details">
+                        <div class="profile">
+                            <img src="img7.webp" alt="profile-pics" />
+                            <div>
+                                <h6><b>Piyush Achara</b></h6>
+                                <span>May 31</span>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h1>
+                                <a class="title" href="#"
+                                    >1476. LeetCode's Subrectangle Queries - Simple LOGICAL Java solution - Bests 66%</a
+                                >
+                            </h1>
+                            <div class="icons">
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >opensource</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >nvidia</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >cuda</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >github</a
+                                >
+                            </div>
+                            <div class="comments">
+                                <div class="reactions">
+                                    <div class="emoji">
+                                        <p><img src="sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" alt=""></p>
+                                        <p><img src="multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg" alt=""></p>
+                                        <p><img src="fire.svg" alt=""></p>
+                                    </div>
+                                    <span class="reaction">22 reactions</span>
+                                </div>
+                                <div class="chat">
+                                    <img src="chat.svg" alt="" />
+                                    <p>Add comment</p>
+                                </div>
+                                <div class="read">
+                                    <p>5 min read</p>
+                                    <b>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-bookmark"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                                            />
+                                        </svg>
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="acc-details">
+                        <div class="profile">
+                            <img src="img8.jpg" alt="profile-pics" />
+                            <div>
+                                <h6><b>munavvar</b></h6>
+                                <span>May 21</span>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h1>
+                                <a class="title" href="#"
+                                    >Exploring Website Scroll Effects: Locmotive scroll vs React Scroll Parallax</a
+                                >
+                            </h1>
+                            <div class="icons">
+
+                            </div>
+                            <div class="comments">
+                                <div class="reactions">
+                                    <div class="emoji">
+                                        <p><img src="sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" alt=""></p>
+                                        <p><img src="fire.svg" alt=""></p>
+                                        <p><img src="multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg" alt=""></p>
+                                    </div>
+                                    <span class="reaction">5 reactions</span>
+                                </div>
+                                <div class="chat">
+                                    <img src="chat.svg" alt="" />
+                                    <p>Add comment</p>
+                                </div>
+                                <div class="read">
+                                    <p>4 min read</p>
+                                    <b>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-bookmark"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                                            />
+                                        </svg>
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="acc-details">
+                        <div class="profile">
+                            <img src="image1.webp" alt="profile-pics" />
+                            <div>
+                                <h6><b>Piyush Achara</b></h6>
+                                <span>May 27</span>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h1>
+                                <a class="title" href="#"
+                                    >Follow Me on Medium!!</a
+                                >
+                            </h1>
+                            <div class="icons">
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >medium</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >verisimilitudex</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >arcitecture</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >piyush</a
+                                >
+                            </div>
+                            <div class="comments">
+                                <div class="reactions">
+                                    <div class="emoji">
+                                        <p><img src="sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" alt=""></p>
+                                        <p><img src="fire.svg" alt=""></p>
+                                        <p><img src="raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg" alt=""></p>
+                                    </div>
+                                    <span class="reaction">9 reactions</span>
+                                </div>
+                                <div class="chat">
+                                    <img src="chat.svg" alt="" />
+                                    <p>Add comment</p>
+                                </div>
+                                <div class="read">
+                                    <p>15 min read</p>
+                                    <b>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-bookmark"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                                            />
+                                        </svg>
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="acc-details">
+                        <div class="profile">
+                            <img src="img12.jpeg" alt="profile-pics" />
+                            <div>
+                                <h6><b>alakkadshaw</b></h6>
+                                <span>May 2</span>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h1>
+                                <a class="title" href="#"
+                                    >Azure Turn Server: The Step by Step Guide</a
+                                >
+                            </h1>
+                            <div class="icons">
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >azure</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >Webdev</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >javascript</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >tutorial</a
+                                >
+                            </div>
+                            <div class="comments">
+                                <div class="reactions">
+                                    <div class="emoji">
+                                        <p><img src="sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" alt=""></p>
+                                        <p><img src="fire.svg" alt=""></p>
+                                        <p><img src="raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg" alt=""></p>
+                                    </div>
+                                    <span class="reaction">5 reactions</span>
+                                </div>
+                                <div class="chat">
+                                    <img src="chat.svg" alt="" />
+                                    <p>Add comment</p>
+                                </div>
+                                <div class="read">
+                                    <p>5 min read</p>
+                                    <b>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-bookmark"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                                            />
+                                        </svg>
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="acc-details">
+                        <div class="profile">
+                            <img src="img14.jpg" alt="profile-pics" />
+                            <div>
+                                <h6><b>Rachel Fazio for CodeNewbie</b></h6>
+                                <span>May 31</span>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h1>
+                                <a class="title" href="#"
+                                    >"From Occupational Therapy to Code": CodeNewbie Podcast S2E4</a
+                                >
+                            </h1>
+                            <div class="icons">
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >podcast</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >codenewbie</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >career</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >beginners</a
+                                >
+                            </div>
+                            <div class="comments">
+                                <div class="reactions">
+                                    <div class="emoji">
+                                        <p><img src="sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" alt=""></p>
+                                        <p><img src="raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg" alt=""></p>
+                                    </div>
+                                    <span class="reaction">4 reactions</span>
+                                </div>
+                                <div class="chat">
+                                    <img src="chat.svg" alt="" />
+                                    <p>Add comment</p>
+                                </div>
+                                <div class="read">
+                                    <p>1 min read</p>
+                                    <b>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-bookmark"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                                            />
+                                        </svg>
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="acc-details">
+                        <div class="profile">
+                            <img src="img15.jpeg" alt="profile-pics" />
+                            <div>
+                                <h6><b>jameslanevermind</b></h6>
+                                <span>May 31</span>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h1>
+                                <a class="title" href="#"
+                                    >What's the difference between Terraform Plan and Overmind Blast Radius</a
+                                >
+                            </h1>
+                            <div class="icons">
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >terraform</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >aws</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >cloud</a>
+                            </div>
+                            <div class="comments">
+                                <div class="reactions">
+                                    <div class="emoji">
+                                        <p><img src="sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" alt=""></p>
+                                    </div>
+                                    <span class="reaction">1 reaction</span>
+                                </div>
+                                <div class="chat">
+                                    <img src="chat.svg" alt="" />
+                                    <p>Add comment</p>
+                                </div>
+                                <div class="read">
+                                    <p>3 min read</p>
+                                    <b>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-bookmark"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                                            />
+                                        </svg>
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="acc-details">
+                        <div class="profile">
+                            <img src="img5.jpg" alt="profile-pics" />
+                            <div>
+                                <h6><b>🚀 Vu Dao 🚀 for AWS Community Builders </b></h6>
+                                <span>Jun 2</span>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h1>
+                                <a class="title" href="#"
+                                    >Single-Sign-On By Vouch Proxy And AWS Cognito</a
+                                >
+                            </h1>
+                            <div class="icons">
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >simflexcloud</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >sso</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >vouchproxy</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >nginx</a
+                                >
+                            </div>
+                            <div class="comments">
+                                <div class="reactions">
+                                    <div class="emoji">
+                                        <p><img src="sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" alt=""></p>
+                                        <p><img src="fire.svg" alt=""></p>
+                                        <p><img src="multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg" alt=""></p>
+                                    </div>
+                                    <span class="reaction">7 reactions</span>
+                                </div>
+                                <div class="chat">
+                                    <img src="chat.svg" alt="" />
+                                    <p>Add comment</p>
+                                </div>
+                                <div class="read">
+                                    <p>4 min read</p>
+                                    <b>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-bookmark"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                                            />
+                                        </svg>
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="acc-details">
+                        <div class="profile">
+                            <img src="image1.webp" alt="profile-pics" />
+                            <div>
+                                <h6><b>Analyze_</b></h6>
+                                <span>May 31</span>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h1>
+                                <a class="title" href="#"
+                                    >How to make your own simple translator in HTML & javascript</a
+                                >
+                            </h1>
+                            <div class="icons">
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >javascript</a>
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >tutorial</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >html</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >css</a
+                                >
+                            </div>
+                            <div class="comments">
+                                <div class="reactions">
+                                    <div class="emoji">
+                                        <p><img src="sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" alt=""></p>
+                                        <p><img src="fire.svg" alt=""></p>
+                                    </div>
+                                    <span class="reaction">2 reactions</span>
+                                </div>
+                                <div class="chat">
+                                    <img src="chat.svg" alt="" />
+                                    <p>Add comment</p>
+                                </div>
+                                <div class="read">
+                                    <p>4 min read</p>
+                                    <b>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-bookmark"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                                            />
+                                        </svg>
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="acc-details">
+                        <div class="profile">
+                            <img src="img9.png" alt="profile-pics" />
+                            <div>
+                                <h6><b>Max Shapira</b></h6>
+                                <span>Jun 2</span>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h1>
+                                <a class="title" href="#"
+                                    >chill beats to focus to</a
+                                >
+                            </h1>
+                            <div class="icons">
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >productivity</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >codenwbie</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >programming</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >Webdev</a
+                                >
+                            </div>
+                            <div class="comments">
+                                <div class="reactions">
+                                    <div class="emoji">
+                                        <p><img src="sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" alt=""></p>
+                                        <p><img src="multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg" alt=""></p>
+                                    </div>
+                                    <span class="reaction">2 reactions</span>
+                                </div>
+                                <div class="chat">
+                                    <img src="chat.svg" alt="" />
+                                    <p>Add comment</p>
+                                </div>
+                                <div class="read">
+                                    <p>2 min read</p>
+                                    <b>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-bookmark"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                                            />
+                                        </svg>
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="acc-details">
+                        <div class="profile">
+                            <img src="img7.webp" alt="profile-pics" />
+                            <div>
+                                <h6><b>Frol k.</b></h6>
+                                <span>May 20</span>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h1>
+                                <a class="title" href="#"
+                                    >Microsrvives:How to use Null Object Pattern to improve users experience</a
+                                >
+                            </h1>
+                            <div class="icons">
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >microservices</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >beginners</a
+                                >
+                            </div>
+                            <div class="comments">
+                                <div class="reactions">
+                                    <div class="emoji">
+                                        <p><img src="sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" alt=""></p>
+                                        <p><img src="fire.svg" alt=""></p>
+                                    </div>
+                                    <span class="reaction">5 reactions</span>
+                                </div>
+                                <div class="chat">
+                                    <img src="chat.svg" alt="" />
+                                    <p>Add comment</p>
+                                </div>
+                                <div class="read">
+                                    <p>8 min read</p>
+                                    <b>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-bookmark"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                                            />
+                                        </svg>
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="acc-details">
+                        <div class="profile">
+                            <img src="git.webp" alt="profile-pics" />
+                            <div>
+                                <h6><b>Ben Halpern for CodeNewbie</b></h6>
+                                <span>May 31</span>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h1>
+                                <a class="title" href="#"
+                                    >Tech Networking 101: How Are You Building Your Connections?</a
+                                >
+                            </h1>
+                            <div class="icons">
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >beginners</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >discuss</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >beginners</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >codenewbie</a
+                                >
+                            </div>
+                            <div class="comments">
+                                <div class="reactions">
+                                    <div class="emoji">
+                                        <p><img src="sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" alt=""></p>
+                                        <p><img src="fire.svg" alt=""></p>
+                                        <p><img src="raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg"></p>
+                                    </div>
+                                    <span class="reaction">9 reactions</span>
+                                </div>
+                                <div class="chat">
+                                    <img src="chat.svg" alt="" />
+                                    <p>Add comment</p>
+                                </div>
+                                <div class="read">
+                                    <p>1 min read</p>
+                                    <b>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-bookmark"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                                            />
+                                        </svg>
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="acc-details">
+                        <div class="profile">
+                            <img src="vn8b3qfevuma2fv444xi.png" alt="profile-pics" />
+                            <div>
+                                <h6><b>Osama Shaikh</b></h6>
+                                <span>May 31</span>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h1>
+                                <a class="title" href="#"
+                                    >Best ways to fix Nodemon error-nodemon.ps 1 cannot be loaded because running scripts is disabled on this system.</a
+                                >
+                            </h1>
+                            <div class="icons">
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >security</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >Webdev</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >node</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >nodemon</a
+                                >
+                            </div>
+                            <div class="comments">
+                                <div class="reactions">
+                                    <div class="emoji">
+                                        <p><img src="sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" alt=""></p>
+                                        <p><img src="fire.svg" alt=""></p>
+                                        <p><img src="multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg" alt=""></p>
+                                        <p><img src="raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg" alt=""></p>
+                                    </div>
+                                    <span class="reaction">8 reactions</span>
+                                </div>
+                                <div class="chat">
+                                    <img src="chat.svg" alt="" />
+                                    <p>Add comment</p>
+                                </div>
+                                <div class="read">
+                                    <p>3 min read</p>
+                                    <b>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-bookmark"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                                            />
+                                        </svg>
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="acc-details">
+                        <div class="profile">
+                            <img src="img10.webp" alt="profile-pics" />
+                            <div>
+                                <h6><b>Thomson Hasen</b></h6>
+                                <span>Jun 2</span>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h1>
+                                <a class="title" href="#"
+                                    >Difference Between Ionic 3 and Ionic 4</a
+                                >
+                            </h1>
+                            <div class="icons">
+                            </div>
+                            <div class="comments">
+                                <div class="reactions">
+                                    <div class="emoji">
+                                        <p>💖</p>
+                                    </div>
+                                    <span class="reaction">4 reactions</span>
+                                </div>
+                                <div class="chat">
+                                    <img src="chat.svg" alt="" />
+                                    <p>Add comment</p>
+                                </div>
+                                <div class="read">
+                                    <p>3 min read</p>
+                                    <b>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-bookmark"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                                            />
+                                        </svg>
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="acc-details">
+                        <div class="profile">
+                            <img src="img8.jpg" alt="profile-pics" />
+                            <div>
+                                <h6><b>Subham</b></h6>
+                                <span>May 31 </span>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h1>
+                                <a class="title" href="#"
+                                    >What is TCP/IP and why is it important? 🤔</a
+                                >
+                            </h1>
+                            <div class="icons">
+
+                            </div>
+                            <div class="comments">
+                                <div class="reactions">
+                                    <div class="emoji">
+                                        <p><img src="sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" alt=""></p>
+                                    </div>
+                                    <span class="reaction">2 reactions</span>
+                                </div>
+                                <div class="chat">
+                                    <img src="chat.svg" alt="" />
+                                    <p>Add comment</p>
+                                </div>
+                                <div class="read">
+                                    <p>3 min read</p>
+                                    <b>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-bookmark"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                                            />
+                                        </svg>
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="acc-details">
+                        <div class="profile">
+                            <img src="img9.png" alt="profile-pics" />
+                            <div>
+                                <h6><b>Subham </b></h6>
+                                <span>Jun 2</span>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h1>
+                                <a class="title" href="#"
+                                    >How MIME and SMTP work together to send emails over the internet</a
+                                >
+                            </h1>
+                            <div class="icons">
+                            </div>
+                            <div class="comments">
+                                <div class="reactions">
+                                    <div class="emoji">
+                                        <p><img src="sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" alt=""></p>
+                                    </div>
+                                    <span class="reaction">3 reactions</span>
+                                </div>
+                                <div class="chat">
+                                    <img src="chat.svg" alt="" />
+                                    <p>Add comment</p>
+                                </div>
+                                <div class="read">
+                                    <p>8 min read</p>
+                                    <b>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-bookmark"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                                            />
+                                        </svg>
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="acc-details">
+                        <div class="profile">
+                            <img src="img5.jpg" alt="profile-pics" />
+                            <div>
+                                <h6><b>Diego chavez</b></h6>
+                                <span>May 31</span>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h1>
+                                <a class="title" href="#"
+                                    >Javascript: important language for web development </a
+                                >
+                            </h1>
+                            <div class="icons">
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >javascript</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >node</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >typescript</a
+                                >
+                            </div>
+                            <div class="comments">
+                                <div class="reactions">
+                                    <div class="emoji">
+                                        <p><img src="sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" alt=""></p>
+                                    </div>
+                                    <span class="reaction">1 reactions</span>
+                                </div>
+                                <div class="chat">
+                                    <img src="chat.svg" alt="" />
+                                    <p>Add comment</p>
+                                </div>
+                                <div class="read">
+                                    <p>2 min read</p>
+                                    <b>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-bookmark"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                                            />
+                                        </svg>
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    
+                    <div class="acc-details">
+                        <div class="profile">
+                            <img src="img2.webp" alt="profile-pics" />
+                            <div>
+                                <h6><b>Subham</b></h6>
+                                <span>May 12</span>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h1>
+                                <a class="title" href="#"
+                                    >HTTP,URL and Methods: A Beginner's Guide 🌐</a
+                                >
+                            </h1>
+                            <div class="icons">
+                                
+                            </div>
+                            <div class="comments">
+                                <div class="reactions">
+                                    <div class="emoji">
+                                        <p><img src="sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" alt=""></p>
+                                    </div>
+                                    <span class="reaction">2 reactions</span>
+                                </div>
+                                <div class="chat">
+                                    <img src="chat.svg" alt="" />
+                                    <p>Add comment</p>
+                                </div>
+                                <div class="read">
+                                    <p>3 min read</p>
+                                    <b>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-bookmark"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                                            />
+                                        </svg>
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="acc-details">
+                        <div class="profile">
+                            <img src="imgg.png" alt="profile-pics" />
+                            <div>
+                                <h6><b>programequity</b></h6>
+                                <span>May 31</span>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h1>
+                                <a class="title" href="#"
+                                    >How to welcome first-Time Contributors to Your Repository Using Github Actions</a
+                                >
+                            </h1>
+                            <div class="icons">
+                                
+                            </div>
+                            <div class="comments">
+                                <div class="reactions">
+                                    <div class="emoji">
+                                        <p><img src="sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" alt=""></p>
+                                        <p><img src="fire.svg" alt=""></p>
+                                    </div>
+                                    <span class="reaction">2 reactions</span>
+                                </div>
+                                <div class="chat">
+                                    <img src="chat.svg" alt="" />
+                                    <p>Add comment</p>
+                                </div>
+                                <div class="read">
+                                    <p>6 min read</p>
+                                    <b>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-bookmark"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                                            />
+                                        </svg>
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                    <div class="acc-details">
+                        <div class="profile">
+                            <img src="img15.jpeg" alt="profile-pics" />
+                            <div>
+                                <h6><b>cynthia Zanoni for Microsoft Azure</b></h6>
+                                <span>May 31</span>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h1>
+                                <a class="title" href="#"
+                                    >Guia de Estudos: DP-900 Microsoft Azure Data Fundamentals</a
+                                >
+                            </h1>
+                            <div class="icons">
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >certification</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >azure</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >data</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >braziliansintech</a
+                                >
+                            </div>
+                            <div class="comments">
+                                <div class="reactions">
+                                    <div class="emoji">
+                                        <p><img src="sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" alt=""></p>
+                                    </div>
+                                    <span class="reaction">2 reactions</span>
+                                </div>
+                                <div class="chat">
+                                    <img src="chat.svg" alt="" />
+                                    <p>Add comment</p>
+                                </div>
+                                <div class="read">
+                                    <p>16 min read</p>
+                                    <b>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-bookmark"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                                            />
+                                        </svg>
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="acc-details">
+                        <div class="profile">
+                            <img src="img7.webp" alt="profile-pics" />
+                            <div>
+                                <h6><b>Viktoria Bors-Pajuste</b></h6>
+                                <span>May 31</span>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h1>
+                                <a class="title" href="#"
+                                    >From Lab to Web -Project Works and an Exceptional project</a
+                                >
+                            </h1>
+                            <div class="icons">
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >career</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >watercooler</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >devjournal</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >codenewbie</a
+                                >
+                            </div>
+                            <div class="comments">
+                                <div class="reactions">
+                                    <div class="emoji">
+                                        <p><img src="sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" alt=""></p>
+                                    </div>
+                                    <span class="reaction">1 reactions</span>
+                                </div>
+                                <div class="chat">
+                                    <img src="chat.svg" alt="" />
+                                    <p>Add comment</p>
+                                </div>
+                                <div class="read">
+                                    <p>8 min read</p>
+                                    <b>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-bookmark"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                                            />
+                                        </svg>
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="acc-details">
+                        <div class="profile">
+                            <img src="img14.jpg" alt="profile-pics" />
+                            <div>
+                                <h6><b>Maddy </b></h6>
+                                <span>May 31</span>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h1>
+                                <a class="title" href="#"
+                                    >Top 10 Best Youtube channels For Software Engineers</a
+                                >
+                            </h1>
+                            <div class="icons">
+                                
+                            </div>
+                            <div class="comments">
+                                <div class="reactions">
+                                    <div class="emoji">
+                                        <p><img src="sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" alt=""></p>
+                                        
+                                    </div>
+                                    <span class="reaction">1 reactions</span>
+                                </div>
+                                <div class="chat">
+                                    <img src="chat.svg" alt="" />
+                                    <p>Add comment</p>
+                                </div>
+                                <div class="read">
+                                    <p>4 min read</p>
+                                    <b>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-bookmark"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                                            />
+                                        </svg>
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="acc-details">
+                        <div class="profile">
+                            <img src="img1.jpg" alt="profile-pics" />
+                            <div>
+                                <h6><b>Damilola Olatunji for Appsignals</b></h6>
+                                <span>May 31</span>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h1>
+                                <a class="title" href="#"
+                                    >Advance Fastify: Hooks, Middleware and Decorators</a
+                                >
+                            </h1>
+                            <div class="icons">
+                                <a href="#"
+                                    ><span class="hash-tag1">#</span
+                                    >node</a
+                                >
+                                <a href="#"
+                                    ><span class="hash-tag2">#</span
+                                    >fastify</a
+                                >
+                            </div>
+                            <div class="comments">
+                                <div class="chat">
+                                    <img src="chat.svg" alt="" />
+                                    <p>Add comment</p>
+                                </div>
+                                <div class="read">
+                                    <p>8 min read</p>
+                                    <b>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="16"
+                                            height="16"
+                                            fill="currentColor"
+                                            class="bi bi-bookmark"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                                            />
+                                        </svg>
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+
+            <!-- end of info -->
+
+            <div class="second-sidebar">
+                <div class="second-side">
+                    <div class="first-child">
+                        <h2>Listings</h2>
+                        <a href="#">see all</a>
+                    </div>
+                    <div class="links">
+                        <a href="#"
+                        >Analytical Engineer/Data Analyst Open for Work
+                        <span>forhire</span></a
+                        >
+                        <a href="#"
+                        >Simple & LOGICAL LeetCode Solutions Avaiable on my
+                        Medium Account!!!<span>misc</span>
+                    </a>
+                    <a href="#"
+                    >pebl -- a free cloud platform! <span>products</span></a
+                    >
+                    <a href="#"
+                    >Senior Front-end developer available for work
+                    [FREELANCE</a
+                    >
+                    <a href="#"
+                    >Join out FREE Coding Community! <span>misc</span></a
+                    >
+                    <a class="listing" href="#">Create a Listing</a>
+                </div>
+
+
+
+                <div class="second-side">
+                    <div class="first-child">
+                        <h2>#discuss</h2>
+                    </div>
+                    <div class="links">
+                        <a href="#"
+                            >Ai Content creation: a challenge or opportunity for Publishing platforms?
+                            <span>forhire</span></a
+                        >
+                        <a href="#"
+                            >Debug or Refractor? The Coding Dilemma<span>10 commens</span>
+                        </a>
+                        <a href="#"
+                            >What you learning about this weekend?<span>2 comments</span></a
+                        >
+                        <a href="#"
+                            >what was your win this week? <span>34 comments</span></a
+                        >
+                        <a href="#"
+                            >An introduction to Cloud computing<span>5 comments</span></a
+                        >
+                    </div>
+                </div>
+            </div>
+
+
+                <div class="second-side">
+                    <div class="first-child">
+                        <h2>#watercooler</h2>
+                    </div>
+                    <div class="links">
+                        <a href="#"
+                            >What Features Would You Want in a Smart Home of the Future?
+                            <span>13 comments</span></a
+                        >
+                        <a href="#"
+                            >Critter Corner v3<span>4 comments</span>
+                        </a>
+                        <a href="#"
+                            >Fictional Tech Made Real: Your Choice? why?<span>7 comments</span></a
+                        >
+                        <a href="#"
+                            >if you could Cha with a Historical Figure, Who would it Be and What Would You Ask?<span>3 comments</span></a
+                        >
+                        <a href="#"
+                            >As a software engineer, will i have a job in serveral years<span>New</span></a
+                        >
+                    </div>
+                </div>
+                <div class="second-side">
+                    <div class="first-child">
+                        <h2>Listings</h2>
+                        <a href="#">see all</a>
+                    </div>
+                    <div class="links">
+                        <a href="#"
+                            >Analytical Engineer/Data Analyst Open for Work
+                            <span>forhire</span></a
+                        >
+                        <a href="#"
+                            >Simple & LOGICAL LeetCode Solutions Avaiable on my
+                            Medium Account!!!<span>misc</span>
+                        </a>
+                        <a href="#"
+                            >pebl -- a free cloud platform! <span>products</span></a
+                        >
+                        <a href="#"
+                            >Senior Front-end developer available for work
+                            [FREELANCE</a
+                        >
+                        <a href="#"
+                            >Join out FREE Coding Community! <span>misc</span></a
+                        >
+                        
+                    </div>
+                    <div class="trending" style="padding-left: 12px;">
+                        <b style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: smaller;">trending guides/resources</b>
+                        <a href="#">Top 10 ChatGPT Plugins You Can't miss</a>
+                        <a href="#">10 Books to improve coding Skill in 2023</a>
+                        <a href="#">My Favourite Books fo DevOps Engineering</a>
+                        <a href="#">Stop using express.js</a>
+                        <a href="#">7 secret Typescript Tricks Pros users</a>
+                        <a href="#">6 websites you'll love as A Developer</a>
+                        <a href="#">How to add in-App notifications to any webb</a>
+                        <a href="#">Top 10 ChatGPT Plugins You Can't miss</a>
+                        <a href="#">Top 10 ChatGPT Plugins You Can't miss</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- ---------------footer------------------ -->
+
+        <div
+            class="footer"
+            style="background: rgb(228, 225, 225); text-align: center"
+        >
+            <p>
+                <a href="#">DEV Community</a> - A constructive and inclusive
+                social network for software developers. With you every step of
+                your journey.
+            </p>
+            <ul>
+                <li>
+                    <a>Home</a>
+                </li>
+                <li><a href="#">Listings</a></li>
+                <li><a href="#">Podcast</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Tags</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Forem Shop</a></li>
+                <li><a href="#">Sponsors</a></li>
+                <li><a href="#">About</a></li>
+                <li>Contact</li>
+                <li><a href="#">Guides</a></li>
+                <li><a href="#">Software Comparisons</a></li>
+                <li><a href="#"> code of conduct </a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+            </ul>
+            <p>
+                Built on Forem -- the <a href="#">open source</a> software that
+                powers <a href="#"> DEV </a> and other inclusive Communities
+            </p>
+            <p>
+                Made with love <a href="#">Ruby on Rails.</a> DEV Community
+                &copy; 2016-2023.
+            </p>
+
+            <ul>
+            </ul>
+        </div>
+    </body>
+</html>
